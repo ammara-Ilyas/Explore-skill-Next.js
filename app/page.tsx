@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <VerticalLine />
-      <Course />
+      <Course heading={`EXPLORE OUR 60+ \n MAJOR PROGRAMS`} />
       <VerticalLine />
       <VirtualTour />
       <VerticalLine />

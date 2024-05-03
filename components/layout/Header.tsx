@@ -25,7 +25,7 @@ function Header() {
           {" "}
           <ul className="hidden  md:flex flex-row uppercase  text-center">
             <li>
-              <Link href="/home" className="block px-4 py-2">
+              <Link href="/" className="block px-4 py-2">
                 Home
               </Link>
             </li>

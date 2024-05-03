@@ -1,6 +1,9 @@
 import React from "react";
 import { courseType } from "../../types/Type";
-function Course() {
+type CourseType = {
+  heading: string;
+};
+const Course: React.FC<CourseType> = ({ heading }) => {
   const data: courseType[] = [
     {
       heading: "Undergraduate Programs            ",
@@ -18,8 +21,7 @@ function Course() {
   return (
     <div className="flex flex-col text-center justify-center items-center gap-7 my-5">
       <h1 className="text-customColor-primary text-5xl font-extrabold">
-        EXPLORE OUR 60+ <br />
-        MAJOR PROGRAMS
+        {heading}
       </h1>
       <p className="font-extralight">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -37,6 +39,6 @@ function Course() {
       </div>
     </div>
   );
-}
+};
 
 export default Course;
