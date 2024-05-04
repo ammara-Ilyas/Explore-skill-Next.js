@@ -1,41 +1,43 @@
 import React from "react";
 import Image from "next/image";
 import user from "@/images/background/user.png";
-import Star from "@/components/widgets/Star";
 import Heading from "@/components/widgets/Heading";
 import Para from "@/components/widgets/Para";
-import { FaStar } from "react-icons/fa";
-
+import StarRating from "@/components/widgets/StarRating";
 function Testimonial() {
+  const data = [
+    {
+      img: { user },
+      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a deserunt. In quia repellat maxime.",
+      name: "Student Name",
+    },
+    {
+      img: { user },
+      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a deserunt. In quia repellat maxime.",
+      name: "Student Name",
+    },
+  ];
   return (
-    <div className="  flex flex-col gap-7 items-center justify-center ">
+    <div className="  flex flex-col gap-5 items-center justify-center pb-16">
       <Heading text="WHAT OUR STUDENT SAYS" />
       <Para text="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
-      <div className="w-10/12 mx-auto flex flex-wrap justify-center items-center border-2 pb-6 border-black ">
-        {/* {data.map((item, i) => ( */}
-        <div className="flex border-2 border-blue-800 w-5/12">
-          <Image
-            src={user}
-            alt="campus image"
-            width={20}
-            height={20}
-            className="rounded-lg basis-1/3 border-2 border-red-700 "
-          />
-          <div className="basis-3/4">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
-              dolores animi aliquam corrupti ipsa in?
-            </p>
-            <h3>Student Name</h3>
-            {[...Array(4)].map((_, index) => (
-              <FaStar
-                key={index}
-                className="text-customColor-primary text-2xl"
+      <div className="w-10/12 mx-auto flex flex-wrap justify-center gap-16 pt-4 items-center pb-6">
+        {data.map((item, i) => (
+          <div className="rounded-lg flex justify-center p-5 gap-5 font-extralight w-[45%] bg-rose-50">
+            <div className=" w-[12%] ">
+              <Image
+                src={user}
+                alt="campus image"
+                className="rounded-full  w-full  "
               />
-            ))}
+            </div>
+            <div className="basis-4/5 ">
+              <p className="text-[16px]">{item.des}</p>
+              <h3 className="text-xl font-bold mt-4 mb-2">{item.name}</h3>
+              <StarRating />
+            </div>
           </div>
-        </div>
-        {/* ))}  */}
+        ))}
       </div>
     </div>
   );

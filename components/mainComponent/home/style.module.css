@@ -1,0 +1,10 @@
+.imgHover {
+  transition: all 2s ease-in-out;
+  /* transition-duration:5s */
+}
+.img:hover .heading {
+  bottom: 0;
+}
+.heading {
+  color: red;
+}

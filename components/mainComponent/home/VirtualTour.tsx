@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Heading from "@/components/widgets/Heading";
 import Para from "@/components/widgets/Para";
@@ -6,7 +7,9 @@ import { tourType } from "@/components/types/Type";
 import campus1 from "@/images/campus/Campus1.png";
 import campus2 from "@/images/campus/Campus2.png";
 import campus3 from "@/images/campus/Campus3.png";
+import style from "./style.module.css";
 function VirtualTour() {
+  const [isHovered, setIsHovered] = useState<Boolean>(false);
   const data: tourType[] = [
     {
       city: "DELHI      ",
@@ -27,20 +30,32 @@ function VirtualTour() {
       <Para text="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
       <div className="w-10/12 mx-auto flex gap-10 bordet-2 pb-6 border-black ">
         {data.map((item, i) => (
-          <div key={i} className="">
+          <div
+            key={i}
+            className="relative w-1/3 border-2 overflow-hidden transition-all duration-1000 ease-in-out"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
             <Image
               src={item.img}
               alt="campus image"
               width={500}
               height={650}
-              className="rounded-md"
+              className={`rounded-md  border-2 border-red-900 h-full transition-all duration-1000 ease-in-out `}
             />
-            <h3 className="text-2xl text-center">{item.city}</h3>
+            <h3
+              className={`${
+                isHovered ? "bottom-0 top-2/4" : "-bottom-full"
+              } text-2xl text-center absolute left-0  flex items-center justify-center text-white bg-opacity-20 bg-blue-300 border-2 h-full w-full`}
+            >
+              {item.city}
+            </h3>
           </div>
         ))}
       </div>
     </div>
   );
+  <style></style>;
 }
 
 export default VirtualTour;
