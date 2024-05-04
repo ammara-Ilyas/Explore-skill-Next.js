@@ -2,17 +2,15 @@ import React from "react";
 import Image from "next/image";
 import user from "@/images/background/user.png";
 import Star from "@/components/widgets/Star";
+import Heading from "@/components/widgets/Heading";
+import Para from "@/components/widgets/Para";
 import { FaStar } from "react-icons/fa";
 
 function Testimonial() {
   return (
     <div className="  flex flex-col gap-7 items-center justify-center ">
-      <h2 className="text-5xl text-customColor-primary font-extrabold">
-        WHAT OUR STUDENT SAYS
-      </h2>
-      <p className="font-extralight ">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      </p>
+      <Heading text="WHAT OUR STUDENT SAYS" />
+      <Para text="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
       <div className="w-10/12 mx-auto flex flex-wrap justify-center items-center border-2 pb-6 border-black ">
         {/* {data.map((item, i) => ( */}
         <div className="flex border-2 border-blue-800 w-5/12">

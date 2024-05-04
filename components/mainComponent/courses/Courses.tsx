@@ -3,30 +3,30 @@ import Image from "next/image";
 import { faculityType } from "@/components/types/Type";
 import Para from "@/components/widgets/Para";
 import Heading from "@/components/widgets/Heading";
-import food from "@/images/faculity/food.png";
-import playground from "@/images/faculity/playground.png";
-import llibrary from "@/images/faculity/libary.png";
-function Faculity() {
+import course1 from "@/images/course/course1.png";
+import course2 from "@/images/course/course2.png";
+import course3 from "@/images/course/course3.png";
+function Courses() {
   const data: faculityType[] = [
     {
-      img: llibrary.src,
-      heading: "Best Libary            ",
+      img: course1.src,
+      heading: "Web Development  ",
       para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.            ",
     },
     {
-      img: playground.src,
-      heading: "Athletics        ",
+      img: course2.src,
+      heading: "Artificial Intelligence    ",
       para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.            ",
     },
     {
-      img: food.src,
-      heading: "Tasty and Healthy Food        ",
+      img: course3.src,
+      heading: "Data Science      ",
       para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.            ",
     },
   ];
   return (
-    <div className="flex flex-col text-center justify-center items-center gap-7 my-5 pb-6">
-      <Heading text="OUR FACILITIES" />
+    <div className="flex flex-col text-center justify-center items-center gap-7 mt-16 pb-6">
+      <Heading text="BEST COURSES" />
       <Para text="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
 
       <div className="w-10/12 mt-5 mx-auto text-left flex gap-16 items-center justify-center mb-6">
@@ -48,4 +48,4 @@ function Faculity() {
   );
 }
 
-export default Faculity;
+export default Courses;

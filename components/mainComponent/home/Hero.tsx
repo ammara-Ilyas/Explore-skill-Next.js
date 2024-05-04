@@ -21,7 +21,10 @@ function Hero() {
         perspiciatis quo.
       </p>
       <Link href="/">
-        <Button text=" Visit us to know More" />
+        <Button
+          text=" Visit us to know More"
+          className="text-white border-white"
+        />
       </Link>
     </div>
   );

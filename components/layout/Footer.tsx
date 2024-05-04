@@ -10,7 +10,7 @@ import {
 
 function Footer() {
   return (
-    <div className="border-t-2 mt-36 flex flex-col items-center text-center gap-4 pb-7 w-[98%] mx-auto ">
+    <div className="border-t-2 mt-28 flex flex-col items-center text-center gap-4 pb-7 w-[98%] mx-auto ">
       <hr />
       <h3 className="text-xl font-bold ">About Us</h3>
       <p className="font-extralight ">

@@ -18,7 +18,7 @@ function Future() {
       </h1>
       <Link href="/contact">
         {" "}
-        <Button text="Contact us" />
+        <Button text="Contact us" className="text-white border-white" />
       </Link>
     </div>
   );

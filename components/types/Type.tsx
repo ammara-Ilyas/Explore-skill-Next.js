@@ -13,3 +13,7 @@ export type faculityType = {
   heading: string;
   para: string;
 };
+export type blogType = {
+  name: string;
+  number: Number;
+};

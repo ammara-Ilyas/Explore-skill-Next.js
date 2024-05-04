@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Heading from "@/components/widgets/Heading";
+import Para from "@/components/widgets/Para";
 import { tourType } from "@/components/types/Type";
 import campus1 from "@/images/campus/Campus1.png";
 import campus2 from "@/images/campus/Campus2.png";
@@ -21,12 +23,8 @@ function VirtualTour() {
   ];
   return (
     <div className="  flex flex-col gap-7 items-center justify-center ">
-      <h2 className="text-5xl text-customColor-primary font-extrabold">
-        TAKE OUR VIRTUAL TOUR
-      </h2>
-      <p className="font-extralight ">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      </p>
+      <Heading text="TAKE OUR VIRTUAL TOUR" />
+      <Para text="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
       <div className="w-10/12 mx-auto flex gap-10 bordet-2 pb-6 border-black ">
         {data.map((item, i) => (
           <div key={i} className="">
