@@ -13,7 +13,7 @@ function Footer() {
     <div className="border-t-2 mt-28 flex flex-col items-center text-center gap-4 pb-7 w-[98%] mx-auto ">
       <hr />
       <h3 className="text-xl font-bold ">About Us</h3>
-      <p className="font-extralight ">
+      <p className="font-extralight w-10/12 mx-auto md:w-11/12">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse minima
         incidunt odio nam facilis, eligendi Itaque fugiat cupiditate
         consectetur. Aliquid ab deserunt exercitationem, illum molestiae

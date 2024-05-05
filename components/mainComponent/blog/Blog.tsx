@@ -5,8 +5,8 @@ import Sidebar from "./Sidebar";
 import Comment from "./Comment";
 const Blog = () => {
   return (
-    <div className="flex gap-5 w-4/5 mx-auto  font-bold">
-      <div className="w-[65%]  flex flex-col gap-4 py-5">
+    <div className="flex gap-5 lg:w-4/5 md:w-11/12 w-4/5 mx-auto flex-wrap justify-center font-bold">
+      <div className="md:w-[65%] w-[95%]  flex flex-col gap-4 py-5">
         <h3 className="text-2xl cursor-pointer">
           Our Certificate & Online Program
         </h3>
@@ -48,7 +48,7 @@ const Blog = () => {
         </div>
         <Comment />
       </div>
-      <div className="w-[32%]  mx-auto">
+      <div className="w-[95%] md:w-[32%]  mx-auto">
         <Sidebar />
       </div>
     </div>
