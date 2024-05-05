@@ -6,8 +6,8 @@ import about from "@/images/background/about.png";
 import Image from "next/image";
 const About = () => {
   return (
-    <div className="flex flex-wrap   lg:w-4/5 md:w-11/12 w-4/5 gap-5  mx-auto  ">
-      <div className=" text-left w-[95%] border-2  ">
+    <div className="flex flex-wrap   lg:w-4/5 md:w-[95%] w-4/5 gap-5  mx-auto  ">
+      <div className=" text-left w-[95%] md:w-[50%] border-2  ">
         <Heading text="WE ARE THE WORLD'S LARGEST UNIVERSITY" />
         <p className="font-extralight py-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
@@ -18,7 +18,7 @@ const About = () => {
         </p>
         <Button text="Explore Now" className="text-blue-600 border-blue-600" />
       </div>
-      <div className="md:w-[48%] w-[95%">
+      <div className="md:w-[45%] w-[95%]">
         <Image src={about} alt="about" className="w-full" />
       </div>
     </div>
