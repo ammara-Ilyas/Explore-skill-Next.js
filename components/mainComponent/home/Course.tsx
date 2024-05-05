@@ -24,11 +24,11 @@ const Course: React.FC<CourseType> = ({ heading }) => {
     <div className="flex flex-col text-center justify-center items-center gap-7 my-5">
       <Heading text={heading} />
       <Para text="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
-      <div className="w-10/12 mt-5 mx-auto flex gap-16 items-center justify-center mb-6">
+      <div className="sm:w-[98%] md:w-11/12 w-full mt-5 mx-auto flex flex-wrap gap-10  items-center  justify-center mb-2">
         {data.map((item, i) => (
           <div
             key={i}
-            className="bg-red-50 p-6 rounded-md text-center transition duration-150 h-[280px] hover:shadow-xl"
+            className="bg-red-50 w-3/4 sm:w-[45%] min-[800px]:w-[40%] lg:w-[30%] p-6 min-h-min rounded-md text-center transition duration-150 h-auto sm:h-[300px] hover:shadow-xl"
           >
             <h2 className="text-xl font-bold pb-3">{item.heading}</h2>
             <p className="font-extralight">{item.para}</p>

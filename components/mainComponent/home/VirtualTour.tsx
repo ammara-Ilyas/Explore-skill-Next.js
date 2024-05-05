@@ -28,11 +28,11 @@ function VirtualTour() {
     <div className="  flex flex-col gap-7 items-center justify-center ">
       <Heading text="TAKE OUR VIRTUAL TOUR" />
       <Para text="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
-      <div className="w-10/12 mx-auto flex gap-10 bordet-2 pb-6 border-black ">
+      <div className="lg:10/12 sm:w-[98%] md:w-11/12 w-full mx-auto flex flex-wrap justify-center gap-10 bordet-2 pb-6 border-black ">
         {data.map((item, i) => (
           <div
             key={i}
-            className="relative w-1/3 border-2 overflow-hidden transition-all duration-1000 ease-in-out"
+            className="relative  w-3/4 sm:w-[45%] min-[800px]:w-[40%] lg:w-[30%] border-2 overflow-hidden transition-all duration-1000 ease-in-out"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >

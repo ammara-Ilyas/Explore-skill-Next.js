@@ -5,8 +5,8 @@ type ParaType = {
 };
 const Para: React.FC<ParaType> = ({ text }) => {
   return (
-    <p className="font-extralight">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    <p className="font-extralight w-10/12 mx-auto md:w-full text-center border-2">
+      {text}
     </p>
   );
 };

@@ -29,9 +29,12 @@ function Faculity() {
       <Heading text="OUR FACILITIES" />
       <Para text="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
 
-      <div className="w-10/12 mt-5 mx-auto text-left flex gap-16 items-center justify-center mb-6">
+      <div className="w-full sm:w-[98%] md:w-11/12  mt-5 mx-auto text-left flex flex-wrap gap-16 items-center justify-center mb-6">
         {data.map((item, i) => (
-          <div key={i}>
+          <div
+            key={i}
+            className=" w-3/4 sm:w-[45%] min-[800px]:w-[40%] lg:w-[30%]"
+          >
             <Image
               src={item.img}
               alt="images"

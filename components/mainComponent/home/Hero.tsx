@@ -13,8 +13,12 @@ function Hero() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <h1 className=" text-7xl text-customColor-primary">GET READY</h1>
-      <h2 className="text-5xl text-emerald-200">TO DISCOVER CAMPUS</h2>
+      <h1 className=" sm:text-7xl text-6xl text-customColor-primary">
+        GET READY
+      </h1>
+      <h2 className="md:text-5xl text-4xl text-emerald-200">
+        TO DISCOVER CAMPUS
+      </h2>
       <p className=" w-2/3 text-center text-xl font-normal text-white">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
         consequuntur corrupti sapiente aut porro esse blanditiis in quae

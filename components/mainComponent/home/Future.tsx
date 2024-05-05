@@ -13,7 +13,7 @@ function Future() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <h1 className=" text-[58px] font-extrabold uppercase  leading-tight	mt-8">
+      <h1 className=" lg:text-[58px] md:text-5xl text-3xl sm:text-4xl text-center font-extrabold uppercase  leading-tight	mt-8">
         GET READY FOR A BRIGHT FUTURE
       </h1>
       <Link href="/contact">

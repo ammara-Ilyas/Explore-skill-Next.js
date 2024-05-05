@@ -5,7 +5,7 @@ type HeadingType = {
 
 const Heading: React.FC<HeadingType> = ({ text }) => {
   return (
-    <h1 className="text-customColor-primary text-[45px] font-extrabold leading-tight		    ">
+    <h1 className="text-customColor-primary text-3xl sm:text-4xl md:text-[45px] font-extrabold		 text-center   ">
       {text}
     </h1>
   );
