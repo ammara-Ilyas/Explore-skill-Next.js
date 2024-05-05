@@ -1,0 +1,9 @@
+.div {
+  height: 2px;
+  width: 0%;
+  background-color: #24f8c7;
+  transition: 0.5s;
+}
+.lin:hover .div {
+  width: 100%;
+}

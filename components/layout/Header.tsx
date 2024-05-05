@@ -3,52 +3,61 @@ import React, { useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { FaStaylinked } from "react-icons/fa";
 import { IoReorderThree } from "react-icons/io5";
-
+import style from "./Header.module.css";
 import Link from "next/link";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    console.log(menuOpen);
+
     setMenuOpen(!menuOpen);
   };
-
+  const navLink = [
+    {
+      path: "/",
+      navlink: "home",
+    },
+    {
+      path: "/course",
+      navlink: "Courses",
+    },
+    {
+      path: "/blog",
+      navlink: "blog",
+    },
+    {
+      path: "/about",
+      navlink: "About",
+    },
+    {
+      path: "/contact",
+      navlink: "Contact",
+    },
+  ];
   return (
-    <section className="absolute top-0 left-0 w-full text-white bg-opacity-0 px-10">
+    <section className="absolute top-0 left-0 w-full text-white bg-opacity-0 px-5">
       <nav className="flex items-center justify-between flex-wrap p-6 px-10">
         <div className="flex text-2xl justify-center items-center font-extrabold">
           Xplore
           <FaStaylinked className="text-5xl text-emerald-300" />
           kill
         </div>
-        <div>
+        <div className={style.hoverEffect}>
           {" "}
-          <ul className="hidden  md:flex flex-row uppercase  text-center">
-            <li>
-              <Link href="/" className="block px-4 py-2">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/course" className="block px-4 py-2">
-                Course
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog" className="block px-4 py-2">
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="block px-4 py-2">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="block px-4 py-2">
-                Contact
-              </Link>
-            </li>
+          <ul className="hidden  md:flex flex-row uppercase gap-7 text-[16px]  text-center">
+            {navLink.map((item, i) => (
+              <li
+                key={i}
+                className={`${style.lin} flex flex-col items-center justify-center`}
+              >
+                <Link href={item.path} className={`${style.lin} block `}>
+                  {item.navlink}
+                </Link>
+                <div className={`${style.div} `}></div>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="md:hidden">
@@ -63,39 +72,22 @@ function Header() {
             <div
               className={`${
                 menuOpen ? "block" : "hidden"
-              } md:block h-screen w-1/2  bg-emerald-300 bg-opacity-70 text-2xl absolute top-0 right-0`}
+              } md:block h-screen w-1/3  bg-[#47b19efa] bg-opacity-70 text-xl absolute top-0 right-0`}
             >
               {/* Responsive bar open and close */}
               <RxCross1
-                className="cursor-pointer text-2xl absolute top-4 right-4"
+                className="cursor-pointer text-2xl absolute top-4 left-4 font-bold"
                 onClick={toggleMenu}
               />
-              <ul className="flex flex-col md:flex-row uppercase border-2 text-white text-center md:text-left h-screen items-center justify-center">
-                <li>
-                  <Link href="/home" className="block px-4 py-2">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/course" className="block px-4 py-2">
-                    Course
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog" className="block px-4 py-2">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="block px-4 py-2">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="block px-4 py-2">
-                    Contact
-                  </Link>
-                </li>
+              <ul className="flex flex-col md:flex-row uppercase  text-white text-left md:text-left h-screen  pt-20 pl-5">
+                {navLink.map((item, i) => (
+                  <li key={i} className={`${style.lin}`} onClick={toggleMenu}>
+                    <Link href={item.path} className={`block px-4 my-2`}>
+                      {item.navlink}
+                    </Link>
+                    <div className={style.div}></div>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
