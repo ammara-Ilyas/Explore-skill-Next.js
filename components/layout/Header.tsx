@@ -61,7 +61,7 @@ function Header() {
           </ul>
         </div>
         <div className="md:hidden">
-          <div>
+          <div className={style.hoverEffect}>
             <IoReorderThree
               className={`${
                 menuOpen ? "hidden" : "block"
@@ -71,8 +71,10 @@ function Header() {
 
             <div
               className={`${
-                menuOpen ? "block" : "hidden"
-              } md:block h-screen w-1/3  bg-[#47b19efa] bg-opacity-70 text-xl absolute top-0 right-0`}
+                menuOpen ? "block right-0 " : "hidden right-full"
+              } ${
+                style.hoverEffect
+              } md:block h-screen w-1/3  bg-[#47b19efa] bg-opacity-70 text-xl absolute top-0 `}
             >
               {/* Responsive bar open and close */}
               <RxCross1

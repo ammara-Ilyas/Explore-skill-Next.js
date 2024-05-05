@@ -7,3 +7,7 @@
 .lin:hover .div {
   width: 100%;
 }
+.hoverEffcet {
+  transition: 7s;
+  transition-duration: 5s;
+}
