@@ -7,7 +7,6 @@
 .lin:hover .div {
   width: 100%;
 }
-.hoverEffcet {
-  transition: 7s;
-  transition-duration: 5s;
+.hoverEffect {
+  transition: transform 5s ease; /* Add transition property */
 }

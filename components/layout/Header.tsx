@@ -44,7 +44,7 @@ function Header() {
           <FaStaylinked className="text-5xl text-emerald-300" />
           kill
         </div>
-        <div className={style.hoverEffect}>
+        <div>
           {" "}
           <ul className="hidden  md:flex flex-row uppercase gap-7 text-[16px]  text-center">
             {navLink.map((item, i) => (
@@ -61,7 +61,7 @@ function Header() {
           </ul>
         </div>
         <div className="md:hidden">
-          <div className={style.hoverEffect}>
+          <div className="">
             <IoReorderThree
               className={`${
                 menuOpen ? "hidden" : "block"
@@ -70,11 +70,13 @@ function Header() {
             />
 
             <div
-              className={`${
-                menuOpen ? "block right-0 " : "hidden right-full"
-              } ${
+              className={` ransition-transform duration-1000  ${
                 style.hoverEffect
-              } md:block h-screen w-1/3  bg-[#47b19efa] bg-opacity-70 text-xl absolute top-0 `}
+              } ${
+                menuOpen
+                  ? "block right-0 transition-transform duration-1000 "
+                  : "hidden right-full"
+              } md:block h-screen w-1/3 bg-[#47b19efa] bg-opacity-70 text-xl absolute top-0 `}
             >
               {/* Responsive bar open and close */}
               <RxCross1

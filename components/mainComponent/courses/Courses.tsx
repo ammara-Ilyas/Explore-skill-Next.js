@@ -33,14 +33,14 @@ function Courses() {
         {data.map((item, i) => (
           <div
             key={i}
-            className=" w-3/4 sm:w-[45%] min-[800px]:w-[40%] lg:w-[30%]"
+            className=" w-3/4 sm:w-[45%] min-[800px]:w-[40%] lg:w-[29%]"
           >
             <Image
               src={item.img}
               alt="images"
               width={500}
               height={650}
-              className="rounded-md "
+              className="rounded-md hove:boxShadow-primary "
             />
             <h2 className="text-xl font-bold py-3">{item.heading}</h2>
             <p className="font-extralight">{item.para}</p>

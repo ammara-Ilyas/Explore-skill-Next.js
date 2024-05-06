@@ -1,0 +1,6 @@
+.hover_heading {
+  transition: 1s;
+}
+.hoverDiv:hover .hover_heading {
+  bottom: 0;
+}
