@@ -7,7 +7,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <div className="flex flex-wrap   lg:w-4/5 md:w-[95%] w-4/5 gap-5  mx-auto  ">
-      <div className=" text-left w-[95%] md:w-[50%] border-2  ">
+      <div className=" text-left w-[95%] md:w-[50%]   ">
         <Heading text="WE ARE THE WORLD'S LARGEST UNIVERSITY" />
         <p className="font-extralight py-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore

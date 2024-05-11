@@ -28,7 +28,7 @@ const Course: React.FC<CourseType> = ({ heading }) => {
         {data.map((item, i) => (
           <div
             key={i}
-            className="bg-red-50 w-3/4 sm:w-[45%] min-[800px]:w-[40%] lg:w-[30%] p-6 min-h-min rounded-md text-center transition duration-150 h-auto sm:h-[300px] hover:boxShadow-primary "
+            className="bg-red-50 w-3/4 group sm:w-[45%] min-[800px]:w-[40%] lg:w-[30%] p-6 min-h-min rounded-md text-center transition duration-200 h-auto sm:h-[300px] hover:shadow-primary group-hover:shadow-primary "
           >
             <h2 className="text-xl font-bold pb-3">{item.heading}</h2>
             <p className="font-extralight">{item.para}</p>

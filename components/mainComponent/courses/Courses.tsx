@@ -33,7 +33,7 @@ function Courses() {
         {data.map((item, i) => (
           <div
             key={i}
-            className=" w-3/4 sm:w-[45%] min-[800px]:w-[40%] lg:w-[29%]"
+            className=" w-3/4 p-4 sm:w-[45%] min-[800px]:w-[40%] lg:w-[29%] duration-300 hover:shadow-primary group-hover:shadow-primary"
           >
             <Image
               src={item.img}

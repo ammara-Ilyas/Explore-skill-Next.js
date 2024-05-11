@@ -31,7 +31,10 @@ function Faculity() {
 
       <div className="lg:w-11/12 sm:w-[98%] md:w-11/12 w-full   mt-5 mx-auto text-left flex flex-wrap gap-16 items-center justify-center mb-6">
         {data.map((item, i) => (
-          <div key={i} className=" w-3/4 sm:w-[45%] lg:w-[29%]">
+          <div
+            key={i}
+            className="p-3 w-3/4 sm:w-[45%] lg:w-[29%] group duration-300 hover:shadow-primary group-hover:shadow-primary"
+          >
             <Image
               src={item.img}
               alt="images"

@@ -3,9 +3,7 @@ import React, { useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { FaStaylinked } from "react-icons/fa";
 import { IoReorderThree } from "react-icons/io5";
-import style from "./Header.module.css";
 import Link from "next/link";
-import { group } from "console";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -74,8 +72,6 @@ function Header() {
 
             <div
               className={` ransition-transform duration-1000  ${
-                style.hoverEffect
-              } ${
                 menuOpen
                   ? "block right-0 transition-transform duration-1000 "
                   : "hidden right-full"
@@ -100,7 +96,7 @@ function Header() {
                       {item.navlink}
                     </Link>
                     <div
-                      className={`${style.div} duration-500 h-[2px] w-0 bg-[#47b19efa] group-hover:w-full`}
+                      className={`duration-500 h-[2px] w-0 bg-[#47b19efa] group-hover:w-full`}
                     ></div>
                   </li>
                 ))}

@@ -31,7 +31,7 @@ function VirtualTour() {
         {data.map((item, i) => (
           <div
             key={i}
-            className={`${style.hoverDiv} relative  w-3/4 sm:w-[45%]  lg:w-[30%] border-2  overflow-hidden`}
+            className={`duration-500 group relative  w-3/4 sm:w-[45%]  lg:w-[30%] border-2  overflow-hidden`}
           >
             <Image
               src={item.img}
@@ -41,7 +41,7 @@ function VirtualTour() {
               className={` rounded-md h-full   `}
             />
             <h3
-              className={`${style.hover_heading} rounded-md text-2xl text-center absolute left-0 -bottom-full  flex items-center justify-center text-white bg-opacity-20 bg-blue-300  h-full w-full`}
+              className={`duration-500 rounded-md text-2xl text-center absolute left-0 -bottom-full group-hover:bottom-0 flex items-center justify-center text-white bg-opacity-20 bg-blue-300  h-full w-full`}
             >
               {item.city}
             </h3>
@@ -50,7 +50,6 @@ function VirtualTour() {
       </div>
     </div>
   );
-  <style></style>;
 }
 
 export default VirtualTour;
