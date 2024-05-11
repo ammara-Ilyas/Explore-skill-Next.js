@@ -5,6 +5,7 @@ import { FaStaylinked } from "react-icons/fa";
 import { IoReorderThree } from "react-icons/io5";
 import style from "./Header.module.css";
 import Link from "next/link";
+import { group } from "console";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,12 +51,14 @@ function Header() {
             {navLink.map((item, i) => (
               <li
                 key={i}
-                className={`${style.lin} flex flex-col items-center justify-center`}
+                className={`duration-500 flex group flex-col items-center justify-center`}
               >
-                <Link href={item.path} className={`${style.lin} block `}>
+                <Link href={item.path} className={`block `}>
                   {item.navlink}
                 </Link>
-                <div className={`${style.div} `}></div>
+                <div
+                  className={`duration-500 h-[2px] w-0 bg-[#24f8c7] group-hover:w-full`}
+                ></div>
               </li>
             ))}
           </ul>
@@ -85,11 +88,20 @@ function Header() {
               />
               <ul className="flex flex-col md:flex-row uppercase  text-white text-left md:text-left h-screen  pt-20 pl-5">
                 {navLink.map((item, i) => (
-                  <li key={i} className={`${style.lin}`} onClick={toggleMenu}>
-                    <Link href={item.path} className={`block px-4 my-2`}>
+                  <li
+                    key={i}
+                    className={`duration-500 group`}
+                    onClick={toggleMenu}
+                  >
+                    <Link
+                      href={item.path}
+                      className={`duration-500 group block px-4 my-2`}
+                    >
                       {item.navlink}
                     </Link>
-                    <div className={style.div}></div>
+                    <div
+                      className={`${style.div} duration-500 h-[2px] w-0 bg-[#47b19efa] group-hover:w-full`}
+                    ></div>
                   </li>
                 ))}
               </ul>
