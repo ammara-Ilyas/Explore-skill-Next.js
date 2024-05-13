@@ -31,7 +31,7 @@ function VirtualTour() {
         {data.map((item, i) => (
           <div
             key={i}
-            className={`duration-500 group relative  w-3/4 sm:w-[45%]  lg:w-[30%] border-2  overflow-hidden`}
+            className={`duration-500 group relative  w-3/4 sm:w-[45%]  lg:w-[30%] overflow-hidden`}
           >
             <Image
               src={item.img}
