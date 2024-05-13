@@ -1,10 +1,11 @@
+import React from "react";
 import Hero from "@/components/mainComponent/courses/Hero";
-import About from "@/components/mainComponent/about/About";
+import Blog from "@/components/mainComponent/blog/Blog";
 function page() {
   return (
     <>
-      <Hero text="ABOUT US" />
-      <About />
+      <Hero text="our post" />
+      <Blog />
     </>
   );
 }

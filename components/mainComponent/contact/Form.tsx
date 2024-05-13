@@ -4,7 +4,7 @@ import Textarea from "@/components/widgets/Textarea";
 import Button from "@/components/widgets/Button";
 const Form = () => {
   return (
-    <form className=" flex flex-col gap-5 p-5 my-10">
+    <form className=" flex flex-col gap-5  p-5 my-10">
       <Input text="Name" bg="bg-white p-3 border-[1px] border-gray-300" />
       <Input text="Email" bg="bg-white p-3 border-[1px] border-gray-300" />
       <Input text="Subject" bg="bg-white p-3 border-[1px] border-gray-300" />
@@ -16,7 +16,7 @@ const Form = () => {
         {" "}
         <Button
           text="Send Message"
-          className="text-blue-600 border-blue-600 w-2/5"
+          className="text-blue-600 border-blue-600 w-3/4 sm:w-2/5"
         />
       </div>
     </form>

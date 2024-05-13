@@ -71,11 +71,9 @@ function Header() {
             />
 
             <div
-              className={` ransition-transform duration-1000  ${
-                menuOpen
-                  ? "block right-0 transition-transform duration-1000 "
-                  : "hidden right-full"
-              } md:block h-screen w-1/3 bg-[#47b19efa] bg-opacity-70 text-xl absolute top-0 `}
+              className={`   ${
+                menuOpen ? "block  " : "hidden right-full"
+              } md:block h-screen w-3/4 md:w-1/2 lg:w-1/3 bg-[#47b19efa] bg-opacity-70 text-xl absolute top-0 `}
             >
               {/* Responsive bar open and close */}
               <RxCross1

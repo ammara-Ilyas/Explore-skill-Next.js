@@ -22,8 +22,8 @@ const Contact = () => {
     },
   ];
   return (
-    <div className="flex justify-center  gap-5 ">
-      <div className=" flex flex-col gap-10 w-10/12 md:w-1/3 mt-16 text-gray-600">
+    <div className="flex justify-center flex-wrap  gap-5 ">
+      <div className=" flex flex-col gap-10 w-10/12 md:w-1/3 mt-16 pt-5 text-gray-600">
         {data.map((item, i) => (
           <div className="flex gap-5  w-11/12  items-center" key={i}>
             <div className="text-customColor-primary text-3xl">{item.icon}</div>
@@ -34,7 +34,7 @@ const Contact = () => {
           </div>
         ))}
       </div>
-      <div className="md:1/2 lg:w-5/12">
+      <div className="w-[95%] md:1/2 lg:w-5/12">
         <Form />
       </div>
     </div>
