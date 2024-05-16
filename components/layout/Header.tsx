@@ -37,7 +37,7 @@ function Header() {
   ];
   return (
     <section className="absolute top-0 left-0 w-full text-white bg-opacity-0 px-5">
-      <nav className="flex items-center justify-between flex-wrap p-6 px-10">
+      <nav className="flex items-center justify-between flex-wrap p-6 px-3 sm:px-10">
         <div className="flex text-2xl justify-center items-center font-extrabold">
           Xplore
           <FaStaylinked className="text-5xl text-emerald-300" />

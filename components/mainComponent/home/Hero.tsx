@@ -19,7 +19,7 @@ function Hero() {
       <h2 className="md:text-5xl sm:text-4xl text-3xl text-emerald-200">
         TO DISCOVER CAMPUS
       </h2>
-      <p className="w-[80%] md:w-2/3 text-center text-xs sm:text-xl font-normal text-white">
+      <p className="w-[80%] md:w-2/3 text-center text-xl font-normal text-white">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
         consequuntur corrupti sapiente aut porro esse blanditiis in quae
         perspiciatis quo.
